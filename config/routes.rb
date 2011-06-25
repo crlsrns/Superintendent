@@ -1,4 +1,6 @@
 Superintendent::Application.routes.draw do
+  get "cases/index"
+
   resources :tokens
 
   resources :sites
