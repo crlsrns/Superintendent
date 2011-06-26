@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Superintendent</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
-</head>
-<body>
 
-<%= yield %>
+  <head>
+    <title>Superintendent</title>
+    <%= stylesheet_link_tag :all %>
+    <%= javascript_include_tag :defaults %>
+    <%= csrf_meta_tag %>
+  </head>
 
-</body>
+  <body>
+
+    <header id="site_header">
+      <p>Superintendent</p>
+    </header>
+
+    <section id="main_content">
+      
+      <article id="report">
+        <%= yield %>
+      </article>
+
+    </section>
+
+    <section id="sidebar">
+
+      <article id="sites">
+        <p>Sites</p>
+      </article>
+
+      <article id="reports">
+        <p>Reports</p>
+      </article>
+
+    </section>
+
+    <footer id="site_footer">
+      <p>&copy; 2011 Carlos Arenas Córdoba.  All rights reserved.</p>
+    </footer>
+  </body>
+
 </html>
