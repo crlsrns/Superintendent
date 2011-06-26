@@ -1,5 +1,52 @@
-body, p, ol, ul, td {
+/* START: clean slate */
+body, p, h1, h2, h3, h4, h5, h6, ol, ul, li, form, td {
   line-height: 18px;
+	margin: 0;
+	padding: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 18px;
+}
+
+/* END: clean slate */
+
+#page_header {
+	padding: 1em;
+}
+
+#page_body {
+}
+
+#main {
+	float: left;
+	margin: 1em;
+	padding: 1em;
+}
+
+#main ol, ul {
+	margin-left: 2em;
+}
+
+#sidebar {
+	float: left;
+	margin: 1em;
+	width: 20%;
+}
+
+#sites {
+	margin-bottom: 1em;
+	padding: 1em;
+}
+
+#reports {
+	margin-top: 1em;
+	padding: 1em;
+}
+
+#page_footer {
+	clear: both;
+	text-align: center;
 }
 
 pre {
