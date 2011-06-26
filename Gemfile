@@ -32,3 +32,6 @@ gem 'sqlite3'
 
 # Use Highrise API
 gem 'highrise', '3.0.0'
+
+# Use Devise for authentication
+gem 'devise'
