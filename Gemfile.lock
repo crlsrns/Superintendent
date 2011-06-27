@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/insphire/userstamp.git
+  revision: ec04caab7d7777a557ad4d62af2a3d5466827af6
+  specs:
+    userstamp (2.0.2)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -83,3 +89,4 @@ DEPENDENCIES
   highrise (= 3.0.0)
   rails (= 3.0.9)
   sqlite3
+  userstamp!

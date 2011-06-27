@@ -35,3 +35,6 @@ gem 'highrise', '3.0.0'
 
 # Use Devise for authentication
 gem 'devise'
+
+# User Userstamp for user stamping
+gem 'userstamp', :git => "git://github.com/insphire/userstamp.git"
