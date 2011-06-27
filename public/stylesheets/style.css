@@ -58,7 +58,7 @@ body {
 	color: #efefef;
 }
 
-#flash_alert {
+#flash_alert, #flash_error {
 	background-color: #f8e0e0;
   color: red;
 }
