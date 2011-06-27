@@ -2,7 +2,7 @@ class TokensController < AuthorizedController
   # GET /tokens
   # GET /tokens.xml
   def index
-    @tokens = Token.all
+    # @tokens is loaded by CanCan automatically in accordance with user abilities.
 
     respond_to do |format|
       format.html # index.html.erb

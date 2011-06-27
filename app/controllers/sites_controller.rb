@@ -2,7 +2,7 @@ class SitesController < AuthorizedController
   # GET /sites
   # GET /sites.xml
   def index
-    @sites = Site.all
+    # @sites is loaded by CanCan automatically in accordance with user abilities.
 
     respond_to do |format|
       format.html # index.html.erb
