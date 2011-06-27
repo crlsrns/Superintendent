@@ -1,4 +1,4 @@
-class SitesController < ApplicationController
+class SitesController < AuthorizedController
   # GET /sites
   # GET /sites.xml
   def index

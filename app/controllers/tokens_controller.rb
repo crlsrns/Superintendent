@@ -1,4 +1,4 @@
-class TokensController < ApplicationController
+class TokensController < AuthorizedController
   # GET /tokens
   # GET /tokens.xml
   def index
