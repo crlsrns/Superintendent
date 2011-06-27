@@ -38,3 +38,6 @@ gem 'devise'
 
 # User Userstamp for user stamping
 gem 'userstamp', :git => "git://github.com/insphire/userstamp.git"
+
+# Use CanCan for authorization
+gem 'cancan'
