@@ -12,6 +12,16 @@
   <body>
 
     <header id="page_header">
+      <nav id="user_nav">
+        <p>
+        <% if user_signed_in? %>
+          Signed in as <%= current_user.email %>. Not you?
+          <%= link_to "Sign out", destroy_user_session_path %>
+        <% else %>
+          <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
+        <% end %>
+        </p>
+      </nav>
       <h1>Superintendent</h1>
     </header>
 
