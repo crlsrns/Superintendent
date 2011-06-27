@@ -10,13 +10,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110626233045) do
+ActiveRecord::Schema.define(:version => 20110627051821) do
 
   create_table "sites", :force => true do |t|
     t.string   "name"
     t.string   "url"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "created_by"
+    t.integer  "updated_by"
   end
 
   create_table "tokens", :force => true do |t|
@@ -24,6 +26,8 @@ ActiveRecord::Schema.define(:version => 20110626233045) do
     t.integer  "site_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "created_by"
+    t.integer  "updated_by"
   end
 
   create_table "users", :force => true do |t|
@@ -40,6 +44,8 @@ ActiveRecord::Schema.define(:version => 20110626233045) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "created_by"
+    t.integer  "updated_by"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
