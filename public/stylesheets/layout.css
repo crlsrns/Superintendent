@@ -12,7 +12,7 @@ p, h1, h2, h3, h4, h5, h6 {
 /* END: clean slate */
 
 #page_header {
-	padding: 1em;
+	padding: 0.125em 1em;
 }
 
 #page_body {
@@ -47,6 +47,11 @@ p, h1, h2, h3, h4, h5, h6 {
 #page_footer {
 	clear: both;
 	text-align: center;
+}
+
+.flash {
+  padding: 0.5em;
+  display: table;
 }
 
 pre {

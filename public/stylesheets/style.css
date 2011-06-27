@@ -15,9 +15,28 @@ body {
 
 	#page_header h1 {
 		color: white;
-		font-size: 150%;
+		font-size: 200%;
 		font-weight: bolder;
 	}
+
+	#page_header p {
+		color: white;
+	}
+
+	#page_header a {
+		color: white;
+		text-decoration: none;
+		border-bottom: 1px dotted white;
+	}
+
+		#page_header a:hover {
+			color: #444;
+			background-color: white;
+		}
+
+#user_nav {
+	text-align: right;
+}
 
 #page_body {
 }
@@ -39,9 +58,19 @@ body {
 	color: #efefef;
 }
 
+#flash_alert {
+	background-color: #f8e0e0;
+  color: red;
+}
+
+#flash_notice {
+	background-color: #e0f8e0;
+  color: green;
+}
+
 /* rounded corners */
 
-#main, #sidebar {
+#main, #sidebar, .flash {
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -69,10 +98,6 @@ a {
 		color: #fff;
 		background-color:#000;
 	}
-
-#notice {
-  color: green;
-}
 
 .field_with_errors {
   background-color: red;
