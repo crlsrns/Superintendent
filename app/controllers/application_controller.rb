@@ -3,6 +3,8 @@ class ApplicationController < ActionController::Base
 
   before_filter :authenticate_user!
 
+  include Userstamp
+
   require 'highrise'
 
   def configure_highrise

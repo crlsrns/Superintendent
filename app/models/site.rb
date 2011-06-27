@@ -4,4 +4,6 @@ class Site < ActiveRecord::Base
                     :uniqueness => true
 
   has_many  :tokens
+
+  stampable
 end
