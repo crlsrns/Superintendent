@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110627163454) do
+ActiveRecord::Schema.define(:version => 20110628021726) do
 
   create_table "sites", :force => true do |t|
     t.string   "name"
@@ -19,15 +19,7 @@ ActiveRecord::Schema.define(:version => 20110627163454) do
     t.datetime "updated_at"
     t.integer  "creator_id"
     t.integer  "updater_id"
-  end
-
-  create_table "tokens", :force => true do |t|
-    t.string   "value"
-    t.integer  "site_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "creator_id"
-    t.integer  "updater_id"
+    t.string   "api_token"
   end
 
   create_table "users", :force => true do |t|
