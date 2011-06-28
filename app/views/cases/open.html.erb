@@ -1,6 +1,12 @@
-<h1>Open Cases</h1>
-<ol>
-  <% @kases.each do |kase| %>
-    <li><%= kase.name %></li>
-  <% end %>
-</ol>
+<% if @kases.empty? %>
+  <p>
+    There are no open cases.
+  </p>
+<% else %>
+  <h1>Open Cases</h1>
+  <ol>
+    <% @kases.each do |kase| %>
+      <li><%= kase.name %></li>
+    <% end %>
+  </ol>
+<% end %>
