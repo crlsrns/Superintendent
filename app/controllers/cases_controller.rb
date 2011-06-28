@@ -1,6 +1,6 @@
 class CasesController < ApplicationController
-  def index
+  def open
     configure_highrise
-    @open_kases = Highrise::Kase.open
+    @kases = Highrise::Kase.open
   end
 end
