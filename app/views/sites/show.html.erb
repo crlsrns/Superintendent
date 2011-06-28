@@ -11,6 +11,7 @@
 </p>
 
 <p>
-  <%= link_to 'Edit', edit_site_path(@site) %> or 
+  <%= link_to 'Edit', edit_site_path(@site) %>,
+  <%= link_to 'Delete', @site, :confirm => 'Are you sure?', :method => :delete %> or
   <%= link_to 'back to Sites list', sites_path %>
 </p>
