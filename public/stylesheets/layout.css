@@ -9,6 +9,11 @@ p, h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 18px;
 }
 
+ul {
+	list-style: none;
+	margin-bottom: 18px;
+}
+
 /* END: clean slate */
 
 #page_header {
@@ -26,7 +31,7 @@ p, h1, h2, h3, h4, h5, h6 {
 	width: 70%;
 }
 
-#main ol, #main ul {
+#main ol {
 	margin-left: 4em;
 }
 
@@ -45,10 +50,6 @@ p, h1, h2, h3, h4, h5, h6 {
 	margin-top: 1em;
 	padding: 1em;
 }
-
-	#reports ul {
-		list-style: none;
-	}
 
 #page_footer {
 	clear: both;

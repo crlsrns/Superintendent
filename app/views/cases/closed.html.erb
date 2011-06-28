@@ -4,7 +4,7 @@
   </p>
 <% else %>
   <h1>Closed Cases</h1>
-  <ol>
+  <ol class="report">
     <% @kases.each do |kase| %>
       <li><%= kase.name %></li>
     <% end %>

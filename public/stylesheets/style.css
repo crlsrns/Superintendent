@@ -69,7 +69,7 @@ a {
 	background-color: white;
 }
 
-#main ol, #main ul {
+.report ol {
 	font-family: 'Anonymous Pro', monospace;
 }
 
