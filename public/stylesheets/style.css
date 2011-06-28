@@ -45,6 +45,10 @@ body {
 	background-color: white;
 }
 
+#main ol, ul {
+	font-family: 'Anonymous Pro', monospace;
+}
+
 #sidebar {
 	background-color: #eee;
 }
