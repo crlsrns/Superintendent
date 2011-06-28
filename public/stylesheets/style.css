@@ -54,7 +54,7 @@ body {
 	background-color: white;
 }
 
-#main ol, ul {
+#main ol, #main ul {
 	font-family: 'Anonymous Pro', monospace;
 }
 
@@ -65,6 +65,11 @@ body {
 	#sidebar h3 {
 		text-transform: lowercase;
 	}
+
+#reports ul a {
+	text-decoration: none;
+	border-bottom: 1px dotted;
+}
 
 #page_footer {
 	background-color: #777;

@@ -24,7 +24,7 @@ p, h1, h2, h3, h4, h5, h6 {
 	padding: 1em;
 }
 
-#main ol, ul {
+#main ol, #main ul {
 	margin-left: 4em;
 }
 
@@ -43,6 +43,10 @@ p, h1, h2, h3, h4, h5, h6 {
 	margin-top: 1em;
 	padding: 1em;
 }
+
+	#reports ul {
+		list-style: none;
+	}
 
 #page_footer {
 	clear: both;
