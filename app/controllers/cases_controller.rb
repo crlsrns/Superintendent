@@ -1,6 +1,7 @@
 class CasesController < ApplicationController
+  before_filter :configure_highrise
+
   def open
-    configure_highrise
     @kases = Highrise::Kase.open
   end
 end
