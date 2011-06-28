@@ -13,15 +13,15 @@
 
   <div class="field">
     <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <%= f.text_field :name, :size => 50 %>
   </div>
   <div class="field">
-    <%= f.label :url %><br />
-    <%= f.text_field :url %>
+    URL<br />
+    <%= f.text_field :url, :size => 50 %>
   </div>
   <div class="field">
-    <%= f.label :api_token %><br />
-    <%= f.text_field :api_token %>
+    API Token<br />
+    <%= f.text_field :api_token, :size => 50 %>
   </div>
   <div class="actions">
     <%= f.submit %>
