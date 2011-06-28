@@ -23,6 +23,9 @@
         </p>
       </nav>
       <h1 id="app_title"><%= link_to "Superintendent", root_path %></h1>
+      <% if ! session[:site_name].blank? %>
+        <h2 id="site_name"><%= session[:site_name] %></h2>
+      <% end %>
     </header>
 
     <section id="page_body">

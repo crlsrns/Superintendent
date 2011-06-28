@@ -35,6 +35,11 @@ a {
 		font-weight: bolder;
 	}
 
+	#page_header h2 {
+		color: #eee;
+		font-size: 150%;
+	}
+
 	#page_header p {
 		color: inherit;
 	}

@@ -18,6 +18,15 @@ ul {
 
 #page_header {
 	padding: 0.125em 1em;
+	padding-bottom: 18px;
+}
+
+#app_title, #site_name {
+	display: inline;
+}
+
+#site_name {
+	margin-left: 1em;
 }
 
 #page_body {
@@ -28,7 +37,7 @@ ul {
 	float: left;
 	margin: 1em;
 	padding: 1em;
-	width: 70%;
+	width: 610px;
 }
 
 #main ol {
@@ -38,7 +47,7 @@ ul {
 #sidebar {
 	float: left;
 	margin: 1em;
-	width: 20%;
+	width: 200px;
 }
 
 #sites {
