@@ -16,12 +16,14 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 #page_body {
+	width: 900px;
 }
 
 #main {
 	float: left;
 	margin: 1em;
 	padding: 1em;
+	width: 70%;
 }
 
 #main ol, #main ul {
