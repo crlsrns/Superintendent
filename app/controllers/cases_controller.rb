@@ -4,4 +4,8 @@ class CasesController < ApplicationController
   def open
     @kases = Highrise::Kase.open
   end
+
+  def closed
+    @kases = Highrise::Kase.closed
+  end
 end

@@ -2,6 +2,7 @@ Superintendent::Application.routes.draw do
   devise_for :users
 
   get "cases/open"
+  get "cases/closed"
 
   resources :tokens
 

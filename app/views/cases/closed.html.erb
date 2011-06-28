@@ -1,0 +1,12 @@
+<% if @kases.empty? %>
+  <p>
+    There are no closed cases.
+  </p>
+<% else %>
+  <h1>Closed Cases</h1>
+  <ol>
+    <% @kases.each do |kase| %>
+      <li><%= kase.name %></li>
+    <% end %>
+  </ol>
+<% end %>
