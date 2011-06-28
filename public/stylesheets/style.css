@@ -75,7 +75,7 @@ a {
 	background-color: white;
 }
 
-.report ol {
+ol.report {
 	font-family: 'Anonymous Pro', monospace;
 }
 
