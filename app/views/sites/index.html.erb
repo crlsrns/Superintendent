@@ -1,12 +1,17 @@
 <h1>Sites</h1>
 
-<ul>
-<% @sites.each do |site| %>
-  <li><%= link_to site.name, site %></li>
+<% if @sites.empty? %>
+  <p>
+    You have not yet registered any sites.
+  </p>
+<% else %>
+  <ul>
+  <% @sites.each do |site| %>
+    <li><%= link_to site.name, site %></li>
+  <% end %>
+  </ul>
 <% end %>
-</ul>
 
-<br />
 <p>
   <%= link_to 'New Site', new_site_path %>
 </p>
