@@ -16,11 +16,11 @@
     <%= f.text_field :name, :size => 50 %>
   </div>
   <div class="field">
-    URL<br />
-    <%= f.text_field :url, :size => 50 %>
+    <%= f.label :url, "URL" %><br />
+    <%= f.url_field :url, :size => 50 %>
   </div>
   <div class="field">
-    API Token<br />
+    <%= f.label :api_token, "API Token" %><br />
     <%= f.text_field :api_token, :size => 50 %>
   </div>
   <div class="actions">
