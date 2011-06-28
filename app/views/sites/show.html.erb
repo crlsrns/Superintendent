@@ -1,17 +1,16 @@
+<h1><%= @site.name %></h1>
+
 <p>
-  <b>Name:</b>
-  <%= @site.name %>
+  <b>URL</b>
+  <%= link_to @site.url, @site.url %>
 </p>
 
 <p>
-  <b>Url:</b>
-  <%= @site.url %>
-</p>
-
-<p>
-  <b>API Token:</b>
+  <b>API Token</b>
   <%= @site.api_token %>
 </p>
 
-<%= link_to 'Edit', edit_site_path(@site) %> |
-<%= link_to 'Back', sites_path %>
+<p>
+  <%= link_to 'Edit', edit_site_path(@site) %> or 
+  <%= link_to 'back to Sites list', sites_path %>
+</p>
