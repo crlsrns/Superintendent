@@ -3,6 +3,7 @@ Superintendent::Application.routes.draw do
 
   get "cases/open"
   get "cases/closed"
+  get "home/index"
 
   resources :tokens
 
