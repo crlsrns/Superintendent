@@ -1,6 +1,8 @@
-<h1>Editing site</h1>
+<h1>Editing <%= @site.name %></h1>
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @site %> |
-<%= link_to 'Back', sites_path %>
+<p>
+  <%= link_to 'Cancel', @site %> or
+  <%= link_to 'back to Sites list', sites_path %>
+</p>
