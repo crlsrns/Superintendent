@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
 
   def configure_highrise
     Highrise::Base.site = Site.first.url
-    Highrise::Base.user = Token.first.value
+    Highrise::Base.user = Site.first.api_token
   end
 
 end
