@@ -4,8 +4,14 @@ en:
   open_cases:       "Open Cases"
   reports:          "Reports"
   see_sites:        "See sites"
-  sign_in:          "sign in"
+  sign_in:          "Sign in"
   sign_out:         "Sign out"
   sign_up:          "Sign up"
   signed_in_as:     "Signed in as"
   sites:            "Sites"
+
+  devise:
+    sessions:
+      email:  "Email"
+      password: "Password"
+      remember_me:  "Remember me"
