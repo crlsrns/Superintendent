@@ -18,7 +18,7 @@
           <%= t(:signed_in_as) %> <%= link_to current_user.email, edit_user_registration_path %>.
           <%= t(:not_you) %>? <%= link_to t(:sign_out), destroy_user_session_path %>
         <% else %>
-          <%= link_to t(:sign_up), new_user_registration_path %> or <%= link_to t(:sign_in), new_user_session_path %>
+          <%= link_to t(:sign_up), new_user_registration_path %> <%= t(:or) %> <%= link_to t(:sign_in), new_user_session_path %>
         <% end %>
         </p>
       </nav>

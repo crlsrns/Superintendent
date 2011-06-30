@@ -2,6 +2,7 @@ es:
   closed_cases:     "Casos cerrados"
   not_you:          "No es Ud"
   open_cases:       "Casos abiertos"
+  or:               "o"
   reports:          "Reportes"
   see_sites:        "Ver sitios"
   sign_in:          "Ingresar"
