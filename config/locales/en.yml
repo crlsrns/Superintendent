@@ -16,3 +16,7 @@ en:
       email:  "Email"
       password: "Password"
       remember_me:  "Remember me"
+    shared_links:
+      forgot_password:  "Forgot your password?"
+      awaiting_confirmation_instructions:  "Didn't receive confirmation instructions?"
+      awaiting_unlock_instructions: "Didn't receive unlock instructions?"

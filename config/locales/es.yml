@@ -16,6 +16,10 @@ es:
       email:  "Correo electrónico"
       password: "Contraseña"
       remember_me:  "Recordarme"
+    shared_links:
+      forgot_password:  "Olvidó su contraseña?"
+      awaiting_confirmation_instructions:  "No ha recibido instrucciones de confirmación?"
+      awaiting_unlock_instructions: "No ha recibido instrucciones de desbloqueo?"
 
   errors:
     messages:
