@@ -2,6 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
   before_filter :authenticate_user!
+  before_filter :set_locale
 
   include Userstamp
 
@@ -16,6 +17,10 @@ class ApplicationController < ActionController::Base
       flash[:error] = "Register a site before trying to run reports on it."
       redirect_to sites_url
     end
+  end
+
+  def set_locale
+    I18n.locale = params[:locale] || I18n.default_locale
   end
 
   private
