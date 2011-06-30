@@ -15,10 +15,10 @@
       <nav id="user_nav">
         <p>
         <% if user_signed_in? %>
-          Signed in as <%= link_to current_user.email, edit_user_registration_path %>. Not you?
-          <%= link_to "Sign out", destroy_user_session_path %>
+          <%= t(:signed_in_as) %> <%= link_to current_user.email, edit_user_registration_path %>.
+          <%= t(:not_you) %>? <%= link_to t(:sign_out), destroy_user_session_path %>
         <% else %>
-          <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
+          <%= link_to t(:sign_up), new_user_registration_path %> or <%= link_to t(:sign_in), new_user_session_path %>
         <% end %>
         </p>
       </nav>
@@ -34,15 +34,15 @@
       <section id="sidebar">
 
         <article id="sites">
-          <h3>Sites</h3>
-          <%= link_to "See sites", sites_path %>
+          <h3><%= t(:sites) %></h3>
+          <%= link_to t(:see_sites), sites_path %>
         </article>
 
         <article id="reports">
-          <h3>Reports</h3>
+          <h3><%= t(:reports) %></h3>
           <ul>
-            <li><%= link_to "Open Cases", cases_open_path %></li>
-            <li><%= link_to "Closed Cases", cases_closed_path %></li>
+            <li><%= link_to t(:open_cases), cases_open_path %></li>
+            <li><%= link_to t(:closed_cases), cases_closed_path %></li>
           </ul>
         </article>
 
