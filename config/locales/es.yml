@@ -1,0 +1,11 @@
+es:
+  closed_cases:     "Casos cerrados"
+  not_you:          "No es Ud"
+  open_cases:       "Casos abiertos"
+  reports:          "Reportes"
+  see_sites:        "Ver sitios"
+  sign_in:          "Ingresar"
+  sign_out:         "Cerrar sesión"
+  sign_up:          "Registrar"
+  signed_in_as:     "Registrado como"
+  sites:            "Sitios"
