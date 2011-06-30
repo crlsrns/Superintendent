@@ -10,6 +10,12 @@ es:
   signed_in_as:     "Registrado como"
   sites:            "Sitios"
 
+  devise:
+    sessions:
+      email:  "Correo electrónico"
+      password: "Contraseña"
+      remember_me:  "Recordarme"
+
   errors:
     messages:
       blank:  "no puede estar en blanco"
