@@ -12,6 +12,10 @@ es:
   sites:            "Sitios"
 
   devise:
+    registrations:
+      email:  "Correo electrónico"
+      password: "Contraseña"
+      password_confirmation: "Confirmación de contraseña"
     sessions:
       email:  "Correo electrónico"
       password: "Contraseña"
