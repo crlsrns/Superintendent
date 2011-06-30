@@ -9,3 +9,13 @@ es:
   sign_up:          "Registrar"
   signed_in_as:     "Registrado como"
   sites:            "Sitios"
+
+  errors:
+    messages:
+      blank:  "no puede estar en blanco"
+      confirmation: "y su confirmación no concuerdan"
+      invalid:  "es inválido"
+      taken:  "ya está registrado"
+      too_long: "está demasiado largo (lo máximo es %{count} caracteres)"
+      too_short:  "está demasiado corto (lo mínimo es %{count} caracteres)"
+      wrong_length: "no tiene el número de caracteres acertado (debe ser %{count})"
