@@ -1,4 +1,5 @@
 en:
+
   closed_cases:     "Closed Cases"
   not_you:          "Not you"
   open_cases:       "Open Cases"
@@ -9,7 +10,7 @@ en:
   sign_out:         "Sign out"
   sign_up:          "Sign up"
   signed_in_as:     "Signed in as"
-  sites:            "Sites"
+  sites_title:      "Sites"
 
   devise:
     registrations:
