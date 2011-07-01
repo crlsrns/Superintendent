@@ -12,6 +12,11 @@ en:
   signed_in_as:     "Signed in as"
   sites_title:      "Sites"
 
+  sites:
+    index:
+      no_sites: "There are no registered sites"
+      new_site: "New site"
+
   devise:
     registrations:
       email:  "Email"

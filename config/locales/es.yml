@@ -12,6 +12,11 @@ es:
   signed_in_as:     "Registrado como"
   sites_title:      "Sitios"
 
+  sites:
+    index:
+      no_sites: "No hay sitios registrados"
+      new_site: "Nuevo sitio"
+
   devise:
     registrations:
       email:  "Correo electrónico"
