@@ -6,7 +6,7 @@
   <h1>Closed Cases</h1>
   <ol class="report">
     <% @kases.each do |kase| %>
-      <li><%= kase.name %></li>
+    <li><%= link_to kase.name, url_to_kase(kase.id) %></li>
     <% end %>
   </ol>
 <% end %>
