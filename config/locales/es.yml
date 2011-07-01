@@ -16,6 +16,9 @@ es:
     index:
       no_sites: "No hay sitios registrados"
       new_site: "Nuevo sitio"
+    new:
+      new_site: "Nuevo sitio"
+      back: "Regresar"
 
   devise:
     registrations:

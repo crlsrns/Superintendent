@@ -16,6 +16,9 @@ en:
     index:
       no_sites: "There are no registered sites"
       new_site: "New site"
+    new:
+      new_site: "New site"
+      back: "Back"
 
   devise:
     registrations:
