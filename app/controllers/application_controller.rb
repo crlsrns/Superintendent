@@ -11,9 +11,8 @@ class ApplicationController < ActionController::Base
     if current_site
       Highrise::Base.site = current_site.url
       Highrise::Base.user = current_site.api_token
-      @current_site = current_site
     else
-      flash[:error] = "Register a site before trying to run reports on it."
+      flash[:error] = "You must choose which site on which to run reports."
       redirect_to sites_url
     end
   end
@@ -21,10 +20,12 @@ class ApplicationController < ActionController::Base
   private
 
     def current_site
-      Site.find(session[:site_id])
-    rescue ActiveRecord::RecordNotFound
-      site = Site.accessible_by(current_ability).first
-      session[:site_id] = site.id
-      site
+      if session[:site_id]
+        Site.find(session[:site_id])
+      else
+        if Site.accessible_by(current_ability).count == 1
+          session[:site_id] = Site.accessible_by(current_ability).first.id
+        end
+      end
     end
 end
