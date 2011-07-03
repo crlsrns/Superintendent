@@ -13,8 +13,7 @@ class ApplicationController < ActionController::Base
       Highrise::Base.site = current_site.url
       Highrise::Base.user = current_site.api_token
     else
-      flash[:error] = "You must choose which site on which to run reports."
-      redirect_to sites_url
+      redirect_to sites_url, :alert => "You must choose on which site to run reports."
     end
   end
 
