@@ -29,12 +29,7 @@ class ApplicationController < ActionController::Base
   private
 
     def current_site
-      if session[:site_id]
-        Site.find(session[:site_id])
-      else
-        if Site.accessible_by(current_ability).count == 1
-          session[:site_id] = Site.accessible_by(current_ability).first.id
-        end
-      end
+      session[:site_id] ||= Site.accessible_by(current_ability).first.id
+      Site.find(session[:site_id])
     end
 end
