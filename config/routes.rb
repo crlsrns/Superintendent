@@ -1,13 +1,12 @@
 Superintendent::Application.routes.draw do
   devise_for :users
 
-  get "cases/open"
   get "cases/closed"
-  get "home/index"
-
-  resources :tokens
+  get "cases/open"
+  get "home/index", :as => :home
 
   resources :sites
+  resources :tokens
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
