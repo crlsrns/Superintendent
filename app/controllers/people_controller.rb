@@ -6,7 +6,7 @@ class PeopleController < ApplicationController
 
   def index
     @page_title = "People"
-    @people = Highrise::Person.find_all_across_pages
+    @people = Person.find_all_across_pages
   end
 
 end
