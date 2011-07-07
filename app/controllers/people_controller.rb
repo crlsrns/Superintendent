@@ -5,13 +5,15 @@ class PeopleController < ApplicationController
   end
 
   def index
-    @page_title = "People"
-    @people = Person.find_all_across_pages
+    if params[:attribute] == "all"
+      @page_title = "People"
+      @people = Person.find_all_across_pages
+    elsif params[:attribute] == "without_last_name"
+      @page_title = "People without Last Name"
+      @people = Person.without_last_name
+    else
+      redirect_to :home, :alert => "That report does not exist"
+    end
   end
 
-  def without_last_name
-    @page_title = "People without Last Name"
-    @people = Person.without_last_name
-    render :index
-  end
 end

@@ -4,8 +4,8 @@ Superintendent::Application.routes.draw do
   get "cases/closed"
   get "cases/open"
   get "home/index", :as => :home
-  get "people/index"
-  get "people/without_last_name"
+
+  match 'people/:attribute' => 'people#index'
 
   resources :sites
   resources :tokens
