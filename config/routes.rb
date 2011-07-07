@@ -5,6 +5,7 @@ Superintendent::Application.routes.draw do
   get "cases/open"
   get "home/index", :as => :home
   get "people/index"
+  get "people/without_last_name"
 
   resources :sites
   resources :tokens
