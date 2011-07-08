@@ -1,16 +1,19 @@
 en:
 
-  closed_cases:     "Closed Cases"
   not_you:          "Not you"
-  open_cases:       "Open Cases"
   or:               "or"
-  reports:          "Reports"
+  reports_title:    "Reports"
   see_sites:        "See sites"
   sign_in:          "Sign in"
   sign_out:         "Sign out"
   sign_up:          "Sign up"
   signed_in_as:     "Signed in as"
   sites_title:      "Sites"
+
+  reports:
+    cases:
+      closed: "Cases: Closed"
+      open: "Cases: Open"
 
   sites:
     index:

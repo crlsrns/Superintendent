@@ -1,16 +1,19 @@
 es:
 
-  closed_cases:     "Casos cerrados"
   not_you:          "No es Ud"
-  open_cases:       "Casos abiertos"
   or:               "o"
-  reports:          "Reportes"
+  reports_title:    "Reportes"
   see_sites:        "Ver sitios"
   sign_in:          "Ingresar"
   sign_out:         "Cerrar sesión"
   sign_up:          "Registrar"
   signed_in_as:     "Registrado como"
   sites_title:      "Sitios"
+
+  reports:
+    cases:
+      closed: "Casos: cerrados"
+      open: "Casos: abiertos"
 
   sites:
     index:

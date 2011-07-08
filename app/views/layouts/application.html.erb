@@ -39,10 +39,10 @@
         </article>
 
         <article id="reports">
-          <h3><%= t(:reports) %></h3>
+          <h3><%= t(:reports_title) %></h3>
           <ul>
-            <li><%= link_to t(:open_cases), cases_open_path %></li>
-            <li><%= link_to t(:closed_cases), cases_closed_path %></li>
+            <li><%= link_to t("reports.cases.open"), cases_open_path %></li>
+            <li><%= link_to t("reports.cases.closed"), cases_closed_path %></li>
             <li><%= link_to "People: All", "/people/all" %></li>
             <li><%= link_to "People: Without Last Name", "/people/without_last_name" %></li>
           </ul>
