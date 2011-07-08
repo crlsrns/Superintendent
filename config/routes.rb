@@ -1,11 +1,10 @@
 Superintendent::Application.routes.draw do
   devise_for :users
 
-  get "cases/closed"
-  get "cases/open"
   get "home/index", :as => :home
 
-  match 'people/:attribute' => 'people#index', :as => :people, :via => :get
+  match 'cases/:attribute'  => 'cases#index',   :as => :cases,  :via => :get
+  match 'people/:attribute' => 'people#index',  :as => :people, :via => :get
 
   resources :sites
   resources :tokens

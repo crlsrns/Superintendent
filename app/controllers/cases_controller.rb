@@ -4,11 +4,15 @@ class CasesController < ApplicationController
     @current_site = current_site
   end
 
-  def open
-    @kases = Highrise::Kase.open
-  end
-
-  def closed
-    @kases = Highrise::Kase.closed
+  def index
+    if params[:attribute] == "open"
+      @page_title = "Open Cases"
+      @kases = Highrise::Kase.open
+    elsif params[:attribute] == "closed"
+      @page_title = "Closed Cases"
+      @kases = Highrise::Kase.closed
+    else
+      redirect_to :home, :alert => "That report does not exist"
+    end
   end
 end
