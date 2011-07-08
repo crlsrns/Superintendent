@@ -5,7 +5,7 @@ Superintendent::Application.routes.draw do
   get "cases/open"
   get "home/index", :as => :home
 
-  match 'people/:attribute' => 'people#index'
+  match 'people/:attribute' => 'people#index', :as => :people, :via => :get
 
   resources :sites
   resources :tokens

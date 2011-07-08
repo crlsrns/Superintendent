@@ -43,8 +43,8 @@
           <ul>
             <li><%= link_to t("reports.cases.open"), cases_open_path %></li>
             <li><%= link_to t("reports.cases.closed"), cases_closed_path %></li>
-            <li><%= link_to t("reports.people.all"), "/people/all" %></li>
-            <li><%= link_to t("reports.people.without_last_name"), "/people/without_last_name" %></li>
+            <li><%= link_to t("reports.people.all"), people_path(:all) %></li>
+            <li><%= link_to t("reports.people.without_last_name"), people_path(:without_last_name) %></li>
           </ul>
         </article>
 
