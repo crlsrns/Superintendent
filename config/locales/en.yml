@@ -14,6 +14,9 @@ en:
     cases:
       closed: "Cases: Closed"
       open: "Cases: Open"
+    people:
+      all: "People: All"
+      without_last_name: "People: Missing Last Name"
 
   sites:
     index:
