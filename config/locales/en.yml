@@ -12,6 +12,7 @@ en:
 
   reports:
     cases:
+      active_this_month: "Cases: Active this month"
       closed: "Cases: Closed"
       open: "Cases: Open"
     people:

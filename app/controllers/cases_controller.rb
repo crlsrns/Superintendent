@@ -11,6 +11,9 @@ class CasesController < ApplicationController
     elsif params[:attribute] == "closed"
       @page_title = "Closed Cases"
       @kases = Highrise::Kase.closed
+    elsif params[:attribute] == "active_this_month"
+      @page_title = "Cases Active This Month"
+      @kases = Kase.active_this_month
     else
       redirect_to :home, :alert => "That report does not exist"
     end
